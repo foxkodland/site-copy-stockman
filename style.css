@@ -5,6 +5,10 @@
     --bg-gray: #f1f1f1;
     --color-gray: #868686;
     --color-a-hover: #0a5c3d;
+    --block-padding-leftRight: 70px;
+
+    --size-buttons: 30px;
+    --color-buttons: white;
 }
 
 
@@ -90,7 +94,7 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px 70px;
+    padding: 20px var(--block-padding-leftRight);
 }
 
 .burger_menu {
@@ -202,7 +206,7 @@ body {
 
 /* gallery */
 .gallery {
-    padding: 0 70px;
+    padding: 0 var(--block-padding-leftRight);
 
     --gap: 10px;
 }
@@ -226,12 +230,14 @@ body {
 }
 
 /* шарики для навигации */
-.banner__navigation {
-    --size-dot: 4px;
-    
+.banner__navigator {
     position: absolute;
     bottom: 20px;
     left: 20px;
+}
+
+.navigator_dotted {
+    --size-dot: 4px;
 
     display: flex;
     align-items: center;
@@ -239,7 +245,7 @@ body {
     gap: 5px;
 }
 
-.banner__navigation > * {
+.navigator_dotted > * {
     border-radius: 50%;
     background-color: black;
     width: var(--size-dot);
@@ -248,16 +254,13 @@ body {
     cursor: pointer;
 }
 
-.banner__navigation .active {
+.navigator_dotted .active {
     border: 2px solid black;
     background-color: white;
 }
 
 /* стрелки влево/вправо */
 .banner__buttons {
-    --size-buttons: 30px;
-    --color-buttons: white;
-
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -268,8 +271,8 @@ body {
     gap: 20px;
 }
 
-.banner__buttons .button_left,
-.banner__buttons .button_right {
+.button_left,
+.button_right {
 
     cursor: pointer;
 
@@ -286,16 +289,17 @@ body {
     align-items: center;
 }
 
-.banner__buttons .button_left {
+.button_left {
     rotate: 180deg;
 }
 
-.banner__buttons img {
+.button_left img,
+.button_right img {
     width: 15px;
 }
 
-.banner__buttons .button_left:hover,
-.banner__buttons .button_right:hover {
+.button_left:hover,
+.button_right:hover {
     background-color: rgb(174, 174, 174);
 }
 
@@ -331,4 +335,51 @@ body {
     color: white;
     font-size: 20px;
     font-weight: 700;
+}
+
+
+
+/* brends-carusel */
+.brends-carusel {
+    padding: 30px var(--block-padding-leftRight);
+}
+
+.brends-carusel .navigate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.brends-carusel .button_left,
+.brends-carusel .button_right {
+    box-shadow: none;
+}
+
+/* отлкючить смену цвета при hover */
+.brends-carusel .button_left:hover,
+.brends-carusel .button_right:hover {
+    background-color: inherit;
+}
+
+.brends-carusel .brends {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow: hidden;
+
+    margin-bottom: 30px;
+}
+
+.brends-carusel .brends a {
+    border: 1px rgba(128, 128, 128, 0.196) solid;
+}
+
+.brends-carusel .brends a:hover {
+    border: 1px black solid;
+    transition: .3s;
+}
+
+.brends-carusel .brends img {
+    width: 128px;
 }
