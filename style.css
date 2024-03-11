@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --bg-gray: #f1f1f1;
+    --color-gray: #868686;
+    --color-a-hover: #0a5c3d;
+}
+
+
+* {
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+/* first_line */
+.first_line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px 70px;
+    background-color: var(--bg-gray);
+
+    font-size: 14px;
+}
+
+.location img {
+    width: 20px;
+}
+
+.location {
+    gap: 10px;
+    color: var(--color-gray);
+} 
+
+.location span {
+    color: black;
+}
+
+.location,
+.first_line__nav,
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first_line__nav {
+    gap: 20px;
+}
+
+.first_line__nav a {
+    color: var(--color-gray);
+}
+
+.first_line__nav a:hover {
+    color: var(--color-a-hover);
+}
+
+.numbers {
+    gap: 20px;
+}
+
+.numbers {
+    font-size: 14px;
+}
+
+.first_line .text_red {
+    color: red;
+}
+
+
+/* .header - вторая линия в шапке*/
+.header {
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 70px;
+}
+
+.burger_menu {
+
+    cursor: pointer;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.burger_menu span {
+    border-radius: 2px;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+
+.header .logo {
+    /* transform: translateX(-40px); */
+    margin-left: -40px;
+}
+
+.header .logo a {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+.header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header nav a {
+    color: black;
+}
+
+.header nav a:hover {
+    color: var(--color-gray);
+}
+
+
+
+.header .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .search > * {
+    background-color: rgb(233, 233, 233);
+    border: 1px solid rgb(195, 195, 195);    
+}
+
+.header .search:hover > * {
+    border: 1px solid black;  
+}
+
+.header .search:hover > input {
+    border-right: none;  
+}
+
+
+.header .search .lupa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 4px;
+    cursor: pointer;
+}
+
+.header .search input {
+    width: 300px;
+    padding: 8px;
+    border-right: none;
+}
+
+.header .search input:focus {
+    outline: none;
+}
+
+.header .user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .user img {
+    width: 20px;
+}
+
+.header .user img:hover {
+    opacity: 0.5;
+}
+
+
+
+/* gallery */
+.gallery {
+    padding: 0 70px;
+
+    --gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.gallery__menu .banner {
+    cursor: pointer;
+    width: 64%;
+    position: relative;
+    /* height: 36%; */
+}
+
+/* шарики для навигации */
+.banner__navigation {
+    --size-dot: 4px;
+    
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.banner__navigation > * {
+    border-radius: 50%;
+    background-color: black;
+    width: var(--size-dot);
+    height: var(--size-dot);
+
+    cursor: pointer;
+}
+
+.banner__navigation .active {
+    border: 2px solid black;
+    background-color: white;
+}
+
+/* стрелки влево/вправо */
+.banner__buttons {
+    --size-buttons: 30px;
+    --color-buttons: white;
+
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.banner__buttons .button_left,
+.banner__buttons .button_right {
+
+    cursor: pointer;
+
+    width: var(--size-buttons);
+    height: var(--size-buttons);
+
+    background-color: var(--color-buttons);
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.454);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__buttons .button_left {
+    rotate: 180deg;
+}
+
+.banner__buttons img {
+    width: 15px;
+}
+
+.banner__buttons .button_left:hover,
+.banner__buttons .button_right:hover {
+    background-color: rgb(174, 174, 174);
+}
+
+
+
+.gallery__menu .menu_list {
+    width: calc(36% - var(--gap));
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--gap);
+}
+
+.gallery__menu .menu_item {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.gallery__menu .menu_item:hover img {
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+.gallery__menu .menu_item p {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
