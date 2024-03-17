@@ -9,6 +9,8 @@
 
     --size-buttons: 30px;
     --color-buttons: white;
+
+    --size-card-eye: 20px;
 }
 
 
@@ -19,6 +21,7 @@
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 
@@ -160,12 +163,13 @@ body {
 }
 
 .header .search:hover > * {
-    border: 1px solid black;  
+    /* border: 1px solid black;   */
+    border-color: black;
 }
 
-.header .search:hover > input {
+/* .header .search:hover > input {
     border-right: none;  
-}
+} */
 
 
 .header .search .lupa {
@@ -383,3 +387,127 @@ body {
 .brends-carusel .brends img {
     width: 128px;
 }
+
+
+
+
+
+
+/* new-items  -- новинки */
+.new-items {
+    padding: 30px var(--block-padding-leftRight);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.new-items h2 {
+    font-size: 30px;
+}
+
+.new-items > a {
+    color: rgb(41, 41, 41);
+}
+
+.new-items > a:hover {
+    color: rgb(79, 79, 79);
+}
+
+.new-items .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* карточка с товаром */
+.card {
+    width: calc(20% - 10px);
+}
+
+.card:hover {
+    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.142);
+}
+
+.card .img {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.card .img img {
+    width: 100%;
+}
+
+.card .heart {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    opacity: 0;
+}
+
+.card .heart:hover {
+    scale: 1.1;
+}
+
+.card:hover .heart {
+    opacity: 1;
+}
+
+
+
+.card .info {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-bottom: 10px;
+}
+
+.card .info p {
+    color: var(--color-gray);
+}
+
+.card .info .price {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card .info .size {
+    font-size: 12px;
+    opacity: 0;
+}
+
+.card:hover .size {
+    opacity: 1;
+}
+
+
+
+.card .eye {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+
+    content: url(img/24-eye.svg);
+    background-color: white;
+
+    width: var(--size-card-eye);
+    height: var(--size-card-eye);
+    padding: 5px;
+
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.142);
+}
+
+.card .eye:hover {
+    background-color: black;
+    content: url(img/24-eye-hover.svg);
+}
+
