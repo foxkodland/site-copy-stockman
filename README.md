@@ -1,6 +1,6 @@
 # Stockman
-частичная копия сайта https://stockmann.ru/
-https://foxkodland.github.io/site-copy-stockman/
+#### частичная копия сайта https://stockmann.ru/
+#### https://foxkodland.github.io/site-copy-stockman/
 
 / препроцессор scss
 
