@@ -586,11 +586,12 @@ ul {
   gap: 5px;
   padding-top: 30px;
 }
-.footer__copyright h1 {
-  font-size: 18px;
+.footer__copyright h3 {
+  font-size: 16px;
 }
 .footer__copyright a {
   color: rgba(255, 255, 255, 0.642);
+  font-size: 14px;
 }
 
 .location {
