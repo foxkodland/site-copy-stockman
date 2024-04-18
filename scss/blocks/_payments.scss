@@ -1,0 +1,21 @@
+
+.payments {
+    &__header {
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    &__header:first-of-type {
+        margin-bottom: 30px;
+    }
+
+    &__store {
+        margin-bottom: 20px;
+    }
+
+    &__payment-methods {
+        margin-bottom: 10px;
+    }
+}

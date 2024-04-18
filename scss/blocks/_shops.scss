@@ -1,0 +1,55 @@
+
+.shops {
+    background-color: #231f20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    width: 350px;
+    padding: 50px 40px;
+
+    outline: rgb(166, 166, 166) 1px solid;
+    outline-offset: -20px;
+
+    color: white;
+
+    &__line {
+        width: 100px;
+        height: 2px;
+        background-color: rgb(166, 166, 166);
+    }
+
+    &__h2 {
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+
+    &__info {
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    &__button {
+        background-color: inherit;
+        border: 1px white solid;
+        padding: 10px 40px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        color: white;
+        font-weight: 700;
+        font-size: 17px;
+        text-transform: uppercase;
+    }
+
+    &__button:hover {
+        cursor: pointer;
+        background-color: #474041;
+    }
+}

@@ -1,0 +1,30 @@
+
+/* new-items  -- новинки */
+.section-catalog {
+    padding: 30px var(--section-padding-x);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    &__heading {
+        font-size: 30px;
+    }
+
+    &__link {
+        color: rgb(41, 41, 41);
+
+        &:hover {
+            color: rgb(112, 112, 112);
+        }
+    }
+
+    &__items-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}

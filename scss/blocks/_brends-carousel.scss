@@ -1,0 +1,21 @@
+.brends-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--non-shadow {
+        box-shadow: none;
+    }
+
+    &--bg-hover:hover {
+        background-color: inherit;
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+}

@@ -1,0 +1,14 @@
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    &__item:hover {
+        opacity: 0.5;
+    }
+
+    img {
+        width: 20px;
+    }
+}

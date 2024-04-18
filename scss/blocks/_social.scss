@@ -1,0 +1,55 @@
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+
+    &__welcome {
+        margin-bottom: 10px;
+    }
+
+    &__phone-main {
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    &__phone-second {
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    &__item {
+        cursor: pointer;
+        padding: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.744);
+
+        &:hover {
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        svg {
+            fill: rgba(255, 255, 255, 0.744);
+            width: 20px;
+            height: 20px;
+        }
+
+        &:hover svg {
+            fill: white;
+        }
+    }
+    
+    &__link,
+    &__phone-main {
+        margin-bottom: 30px;
+    }
+}

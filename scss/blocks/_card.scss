@@ -1,0 +1,85 @@
+
+/* карточка с товаром */
+.card {
+    --color-gray: #868686;
+
+    width: 300px;
+
+    &:hover {
+        box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.142);
+    }
+
+    &:hover &__heart {
+        opacity: 1;
+    }
+
+    &:hover &__size {
+        opacity: 1;
+    }
+
+    &__image-wrap {
+        position: relative;
+        margin-bottom: 10px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__heart {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    
+        opacity: 0;
+
+        &:hover {
+            scale: 1.1;
+        }
+    }
+
+    &__content {
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        color: var(--color-gray);
+    }
+
+    &__price {
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    &__size {
+        font-size: 12px;
+        opacity: 0;
+    }
+
+    &__eye {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+    
+        content: url(../img/24-eye.svg);
+        background-color: white;
+    
+        width: var(--size-card-eye);
+        height: var(--size-card-eye);
+        padding: 5px;
+    
+        border-radius: 50%;
+        box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.142);
+
+        &:hover {
+            background-color: black;
+            content: url(../img/24-eye-hover.svg);
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.banner-carousel {
+    cursor: pointer;
+    position: relative;
+    /* height: 36%; */
+
+    &__banner-images {
+        width: 100%;
+    }
+
+    &__pagination {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    &__buttons {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}

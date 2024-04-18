@@ -1,0 +1,24 @@
+
+.pagination {
+    --size-dot: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+
+    & > * {
+        border-radius: 50%;
+        background-color: black;
+        width: var(--size-dot);
+        height: var(--size-dot);
+    
+        cursor: pointer;
+    }
+
+    &__item--active {
+        border: 2px solid black;
+        background-color: white;
+    }
+}
+

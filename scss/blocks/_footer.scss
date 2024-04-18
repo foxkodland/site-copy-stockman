@@ -1,0 +1,31 @@
+.footer {
+    background-color: #191c23;
+    padding: var(--section-padding-x);
+    color: white;
+
+    &__main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    
+        & > * {
+            width: 20%;
+        }
+    }
+
+    &__copyright {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-top: 30px;
+    
+        h1 {
+            font-size: 18px;
+        }
+    
+        a {
+            color: rgba(255, 255, 255, 0.642);
+        }
+    }
+}

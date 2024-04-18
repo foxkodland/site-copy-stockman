@@ -1,0 +1,25 @@
+.gallery-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-gallery-menu);
+
+    &__banner-carousel {
+        width: 64%;
+    }
+
+    &__menu-list {
+        width: calc(36% - var(--gap-gallery-menu));
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

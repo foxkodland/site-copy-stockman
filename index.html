@@ -5,116 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/shop_footer.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="first_line">
+    <header class="header">
+        <div class="header-sidebar">
             <div class="location">
                 <img src="img/icon_location.png" alt="">
                 <p>Ваш город: <span>г.Москва</span></p>
             </div>
-            <nav class="first_line__nav">
-                <p><a href="">Магазины</a></p>
-                <p><a href="">Акции и новости</a></p>
-                <p><a href="">Доставка по всей России</a></p>
-                <p><a href="">Модный блог</a></p>
-                <p><a href="" class="text_red">Sale</a></p>
-                <p><a href="">Бренды</a></p>
+            <nav class="nav">
+                <p><a class="nav__item" href="">Магазины</a></p>
+                <p><a class="nav__item" href="">Акции и новости</a></p>
+                <p><a class="nav__item" href="">Доставка по всей России</a></p>
+                <p><a class="nav__item" href="">Модный блог</a></p>
+                <p><a class="nav__item nav__item--red" href="#">Sale</a></p>
+                <p><a class="nav__item" href="">Бренды</a></p>
             </nav>
-            <div class="numbers">
+            <div class="header-sidebar__numbers">
                 <p>8 800 770 09 90</p>
                 <p>8 495 775 09 44</p>
             </div>
         </div>
 
-        <div class="header">
-            <div class="burger_menu">
+        <div class="header-main">
+            <div class="burger-menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
 
-            <div class="logo">
-                <a href="#">
+            <div class="logo header-main__logo">
+                <a class="logo__link" href="#">
                     <img src="img/header-logo-desktop.svg" alt="">
                 </a>
             </div>
 
-            <nav>
-                <p><a href="">Женщинам</a></p>
-                <p><a href="">Мужчинам</a></p>
-                <p><a href="">Детям</a></p>
-                <p><a href="">Для дома</a></p>
+            <nav class="navigation">
+                <p><a class="navigation__item" href="">Женщинам</a></p>
+                <p><a class="navigation__item" href="">Мужчинам</a></p>
+                <p><a class="navigation__item" href="">Детям</a></p>
+                <p><a class="navigation__item" href="">Для дома</a></p>
             </nav>
 
             <div class="search">
-                <input type="text" class="search" placeholder="Найти">
-                <div class="lupa"><svg width="24px" height="24px" fill="#231F20" xmlns="http://www.w3.org/2000/svg"><path d="M8.7 2.047c-.789.08-1.725.35-2.449.706a7.191 7.191 0 0 0-2.006 1.418 7.466 7.466 0 0 0-.074 10.584 7.469 7.469 0 0 0 7.72 1.844 8.418 8.418 0 0 0 1.784-.882l.374-.247 2.706 2.703c2.074 2.073 2.747 2.722 2.885 2.784.364.164.729.076 1.061-.256.332-.332.42-.697.256-1.061-.062-.138-.711-.811-2.784-2.885l-2.703-2.706.247-.374c1.659-2.519 1.703-5.611.116-8.17A7.504 7.504 0 0 0 8.7 2.047m1.86 2.054c1.245.269 2.315.894 3.101 1.811.631.736 1.033 1.564 1.246 2.568.101.476.101 1.564 0 2.04-.271 1.276-.89 2.345-1.819 3.141-.736.631-1.564 1.033-2.568 1.246-.476.101-1.564.101-2.04 0-1.004-.213-1.832-.615-2.568-1.246A5.473 5.473 0 0 1 4.011 9.72a5.45 5.45 0 0 1 .714-2.941c.266-.463.496-.763.894-1.16.851-.851 1.854-1.36 3.081-1.563.413-.069 1.451-.044 1.86.045" fill-rule="evenodd" fill="#000"></path></svg>
-                </div>
+                <input type="text" class="search__input" placeholder="Найти">
+                <div class="search__icon"><svg width="24px" height="24px" fill="#231F20" xmlns="http://www.w3.org/2000/svg"><path d="M8.7 2.047c-.789.08-1.725.35-2.449.706a7.191 7.191 0 0 0-2.006 1.418 7.466 7.466 0 0 0-.074 10.584 7.469 7.469 0 0 0 7.72 1.844 8.418 8.418 0 0 0 1.784-.882l.374-.247 2.706 2.703c2.074 2.073 2.747 2.722 2.885 2.784.364.164.729.076 1.061-.256.332-.332.42-.697.256-1.061-.062-.138-.711-.811-2.784-2.885l-2.703-2.706.247-.374c1.659-2.519 1.703-5.611.116-8.17A7.504 7.504 0 0 0 8.7 2.047m1.86 2.054c1.245.269 2.315.894 3.101 1.811.631.736 1.033 1.564 1.246 2.568.101.476.101 1.564 0 2.04-.271 1.276-.89 2.345-1.819 3.141-.736.631-1.564 1.033-2.568 1.246-.476.101-1.564.101-2.04 0-1.004-.213-1.832-.615-2.568-1.246A5.473 5.473 0 0 1 4.011 9.72a5.45 5.45 0 0 1 .714-2.941c.266-.463.496-.763.894-1.16.851-.851 1.854-1.36 3.081-1.563.413-.069 1.451-.044 1.86.045" fill-rule="evenodd" fill="#000"></path></svg></div>
             </div>
 
             <div class="user">
-                <a href="#"><img src="img/icon_user.png" alt=""></a>
-                <a href="#"><img src="img/icon_heart.png" alt=""></a>
-                <a href="#"><img src="img/icon_shopping-bag.png" alt=""></a>
+                <a class="user__item" href="#"><img src="img/icon_user.png" alt=""></a>
+                <a class="user__item" href="#"><img src="img/icon_heart.png" alt=""></a>
+                <a class="user__item" href="#"><img src="img/icon_shopping-bag.png" alt=""></a>
             </div>
-            
         </div>
-
     </header>
 
-    <section class="gallery">
-        <div class="gallery__menu">
-            <div class="banner">
+    <section class="section">
+        <div class="gallery-menu">
+            <div class="banner-carousel gallery-menu__banner-carousel">
                 <a href="">
-                    <img src="img/Carusel_1.webp" alt="">
+                    <img class="banner-carousel__banner-images" src="img/Carusel_1.webp" alt="">
                 </a>
-                <div class="navigator_dotted banner__navigator">
+                <div class="pagination banner-carousel__pagination">
                     <div></div>
                     <div></div>
                     <div></div>
                     <div></div>
                     <div></div>
+                    <div  class="pagination__item--active"></div>
                     <div></div>
                     <div></div>
-                    <div class="active"></div>
                     <div></div>
                 </div>
 
-                <div class="banner__buttons">
-                    <button class="button_left">
-                        <img src="img/icon__right-arrow.png" alt="">
+                <div class="banner-carousel__buttons">
+                    <button class="button-arrow button-arrow--left">
+                        <img class="button-arrow__image" src="img/icon__right-arrow.png" alt="">
                     </button>
-                    <button class="button_right">
-                        <img src="img/icon__right-arrow.png" alt="">
+                    <button class="button-arrow ">
+                        <img class="button-arrow__image" src="img/icon__right-arrow.png" alt="">
                     </button>
                 </div>
             </div>
-            <div class="menu_list">
-                <a href="#">
-                    <div class="menu_item">
+            <div class="menu-list gallery-menu__menu-list">
+                <a class="" href="#">
+                    <div class="menu-list__item">
                         <img src="img/menu__zhenshchinam-g-min.jpg" alt="">
-                        <p>Женщинам</p>
+                        <p class="menu-list__title">Женщинам</p>
                     </div>
                 </a>
-                <a href="#">
-                    <div class="menu_item">
+                <a class="" href="#">
+                    <div class="menu-list__item">
                         <img src="img/menu__muzhchinam-g-min.jpg" alt="">
-                        <p>Мужчинам</p>
+                        <p class="menu-list__title">Мужчинам</p>
                     </div>
                 </a>
-                <a href="#">
-                    <div class="menu_item">
+                <a class="" href="#">
+                    <div class="menu-list__item">
                         <img src="img/menu__dlya-doma-g-min.jpg" alt="">
-                        <p>Для дома</p>
+                        <p class="menu-list__title">Для дома</p>
                     </div>
                 </a>
-                <a href="#">
-                    <div class="menu_item">
+                <a class="" href="#">
+                    <div class="menu-list__item">
                         <img src="img/menu__detyam-g-min.jpg" alt="">
-                        <p>Детям</p>
+                        <p class="menu-list__title">Детям</p>
                     </div>
                 </a>
             </div>
@@ -122,34 +118,34 @@
         </section>
     </section>
 
-    <section class="brends-carusel">
-        <div class="brends">
-            <a href=""><img src="img/brends/21MAISON.webp" alt=""></a>
-            <a href=""><img src="img/brends/AURANNA.webp" alt=""></a>
-            <a href=""><img src="img/brends/BELUCCI.webp" alt=""></a>
-            <a href=""><img src="img/brends/BOSS.webp" alt=""></a>
-            <a href=""><img src="img/brends/COINCASA.webp" alt=""></a>
-            <a href=""><img src="img/brends/EMPORIO_ARMANI.webp" alt=""></a>
-            <a href=""><img src="img/brends/EVER_BE.webp" alt=""></a>
-            <a href=""><img src="img/brends/FURLA.webp" alt=""></a>
-            <a href=""><img src="img/brends/GEOX.webp" alt=""></a>
-            <a href=""><img src="img/brends/GUESS.webp" alt=""></a>
-            <a href=""><img src="img/brends/HUGO.webp" alt=""></a>
-            <a href=""><img src="img/brends/KARL_LAGERFELD.webp" alt=""></a>
-            <a href=""><img src="img/brends/LE_CREUSET.webp" alt=""></a>
-            <a href=""><img src="img/brends/Logo_Marc_O_Polo_360x200.webp" alt=""></a>
-            <a href=""><img src="img/brends/MARCO_DI_RADI.webp" alt=""></a>
-            <a href=""><img src="img/brends/Pinko.webp" alt=""></a>
-            <a href=""><img src="img/brends/SABRINA-SCALA_NEW.webp" alt=""></a>
-            <a href=""><img src="img/brends/TOMMY_HILFIGER.webp" alt=""></a>
+    <section class="section brends-carousel">
+        <div class="brends-carousel__brends brends">
+            <a class="brends__item"><img src="img/brends/21MAISON.webp" alt=""></a>
+            <a class="brends__item"><img src="img/brends/AURANNA.webp" alt=""></a>
+            <a class="brends__item"><img src="img/brends/BELUCCI.webp" alt=""></a>
+            <a class="brends__item"><img src="img/brends/BOSS.webp" alt=""></a>
+            <a class="brends__item"><img src="img/brends/COINCASA.webp" alt=""></a>
+            <a class="brends__item"><img src="img/brends/EMPORIO_ARMANI.webp" alt=""></a>
+            <a class="brends__item"><img src="img/brends/EVER_BE.webp" alt=""></a>
+            <a class="brends__item"><img src="img/brends/FURLA.webp" alt=""></a>
+            <a class="brends__item"><img src="img/brends/GEOX.webp" alt=""></a>
+            <a class="brends__item"><img src="img/brends/GUESS.webp" alt=""></a>
+            <a class="brends__item"><img src="img/brends/HUGO.webp" alt=""></a>
+            <a class="brends__item"><img src="img/brends/KARL_LAGERFELD.webp" alt=""></a>
+            <a class="brends__item"><img src="img/brends/LE_CREUSET.webp" alt=""></a>
+            <a class="brends__item"><img src="img/brends/Logo_Marc_O_Polo_360x200.webp" alt=""></a>
+            <a class="brends__item"><img src="img/brends/MARCO_DI_RADI.webp" alt=""></a>
+            <a class="brends__item"><img src="img/brends/Pinko.webp" alt=""></a>
+            <a class="brends__item"><img src="img/brends/SABRINA-SCALA_NEW.webp" alt=""></a>
+            <a class="brends__item"><img src="img/brends/TOMMY_HILFIGER.webp" alt=""></a>
         </div>
         
-        <div class="navigate">
-            <button class="button_left">
-                <img src="img/icon__right-arrow.png" alt="">
+        <div class="brends-carousel__pagination">
+            <button class="brends-carousel__button button-arrow button-arrow--left brends-carousel--non-shadow brends-carousel--bg-hover">
+                <img class="button-arrow__image" src="img/icon__right-arrow.png" alt="">
             </button>
-            <div class="navigator_dotted">
-                <div class="active"></div>
+            <div class="brends-carousel__navigator_dotted pagination">
+                <div class="pagination__item--active"></div>
                 <div></div>
                 <div></div>
                 <div></div>
@@ -159,32 +155,31 @@
                 <div></div>
                 <div></div>
             </div>
-            <button class="button_right">
-                <img src="img/icon__right-arrow.png" alt="">
+            <button class="brends-carousel__button button-arrow  brends-carousel--non-shadow brends-carousel--bg-hover">
+                <img class="button-arrow__image" src="img/icon__right-arrow.png" alt="">
             </button>
         </div>
     </section>
 
-    <section class="new-items">
-        <h2>Новинки</h2>
-        <a href="#">Смотреть все</a>
-        <div class="items">
-            <div class="card">
+    <section class="section section-catalog">
+        <h2 class="section-catalog__heading">Новинки</h2>
+        <a class="section-catalog__link" href="#">Смотреть все</a>
+        <div class="section-catalog__items-flex">
+            <article class="card">
                 <a href="#">
-                <div class="img">
+                <div class="card__image-wrap">
                     <img src="img/new-items/1.webp" alt="">
-                    <div class="heart">
+                    <div class="card__heart">
                         <img src="img/heart.svg" alt="">
                     </div>
-                    <div class="eye">
-                        <!-- <img src="img/24-eye.svg" alt=""> -->
+                    <div class="card__eye">
                     </div>
                 </div>
-                <div class="info">
-                    <h3>Auranna</h3>
-                    <p>Плащ с отложным воротником и поясом</p>
-                    <p class="price">23 990р</p>
-                    <div class="size">
+                <div class="card__content">
+                    <h3 class="card__title">Auranna</h3>
+                    <p class="card__description">Плащ с отложным воротником и поясом</p>
+                    <p class="card__price">23 990р</p>
+                    <div class="card__size">
                         <span>44</span>
                         <span>46</span>
                         <span>48</span>
@@ -194,23 +189,22 @@
                     </div>
                 </div>
             </a>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <a href="#">
-                <div class="img">
-                    <img src="img/new-items/2.webp" alt="">
-                    <div class="heart">
+                <div class="card__image-wrap">
+                    <img src="img/new-items/1.webp" alt="">
+                    <div class="card__heart">
                         <img src="img/heart.svg" alt="">
                     </div>
-                    <div class="eye">
-                        <img src="img/24-eye.svg" alt="">
+                    <div class="card__eye">
                     </div>
                 </div>
-                <div class="info">
-                    <h3>Auranna</h3>
-                    <p>Плащ с отложным воротником и поясом</p>
-                    <p class="price">23 990р</p>
-                    <div class="size">
+                <div class="card__content">
+                    <h3 class="card__title">Auranna</h3>
+                    <p class="card__description">Плащ с отложным воротником и поясом</p>
+                    <p class="card__price">23 990р</p>
+                    <div class="card__size">
                         <span>44</span>
                         <span>46</span>
                         <span>48</span>
@@ -220,44 +214,22 @@
                     </div>
                 </div>
             </a>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <a href="#">
-                <div class="img">
-                    <img src="img/new-items/3.webp" alt="">
-                    <div class="heart">
+                <div class="card__image-wrap">
+                    <img src="img/new-items/1.webp" alt="">
+                    <div class="card__heart">
                         <img src="img/heart.svg" alt="">
                     </div>
-                    <div class="eye">
-                        <img src="img/24-eye.svg" alt="">
+                    <div class="card__eye">
                     </div>
                 </div>
-                <div class="info">
-                    <h3>Auranna</h3>
-                    <p>Плащ с отложным воротником и поясом</p>
-                    <p class="price">23 990р</p>
-                    <div class="size">
-                        <span>Один размер</span>
-                    </div>
-                </div>
-            </a>
-            </div>
-            <div class="card">
-                <a href="#">
-                <div class="img">
-                    <img src="img/new-items/4.jpg" alt="">
-                    <div class="heart">
-                        <img src="img/heart.svg" alt="">
-                    </div>
-                    <div class="eye">
-                        <img src="img/24-eye.svg" alt="">
-                    </div>
-                </div>
-                <div class="info">
-                    <h3>Auranna</h3>
-                    <p>Плащ с отложным воротником и поясом</p>
-                    <p class="price">23 990р</p>
-                    <div class="size">
+                <div class="card__content">
+                    <h3 class="card__title">Auranna</h3>
+                    <p class="card__description">Плащ с отложным воротником и поясом</p>
+                    <p class="card__price">23 990р</p>
+                    <div class="card__size">
                         <span>44</span>
                         <span>46</span>
                         <span>48</span>
@@ -267,23 +239,22 @@
                     </div>
                 </div>
             </a>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <a href="#">
-                <div class="img">
-                    <img src="img/new-items/5.webp" alt="">
-                    <div class="heart">
+                <div class="card__image-wrap">
+                    <img src="img/new-items/1.webp" alt="">
+                    <div class="card__heart">
                         <img src="img/heart.svg" alt="">
                     </div>
-                    <div class="eye">
-                        <!-- <img src="img/24-eye.svg" alt=""> -->
+                    <div class="card__eye">
                     </div>
                 </div>
-                <div class="info">
-                    <h3>Auranna</h3>
-                    <p>Плащ с отложным воротником и поясом</p>
-                    <p class="price">23 990р</p>
-                    <div class="size">
+                <div class="card__content">
+                    <h3 class="card__title">Auranna</h3>
+                    <p class="card__description">Плащ с отложным воротником и поясом</p>
+                    <p class="card__price">23 990р</p>
+                    <div class="card__size">
                         <span>44</span>
                         <span>46</span>
                         <span>48</span>
@@ -293,12 +264,12 @@
                     </div>
                 </div>
             </a>
-            </div>
-
+            </article>
+ 
         </div>
     </section>
 
-    <section class="article-shop">
+    <section class="section">
         <div class="banner-shop">
             <div class="banner-shop__wrap">
                 <img class="banner-shop__img" src="img/shop.webp" alt="">
@@ -315,9 +286,9 @@
         </div>
     </section>
 
-    <footer>
-        <div class="footer">
-            <div class="footer__social social">
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="social">
                 <p class="social__welcome">Присоединяйтесь в соц. сетях</p>
                 <ul class="social__link">
                     <li class="social__item"><a href="https://vk.com/stockmann.russia" target="_blank" rel="noopener noreferrer" class="t9_dLG"><i class="_wndIp" style="width:19.5px;height:19.5px;fill:currentColor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.28 10.98"><path d="M18.4 11h-2.58a1.84 1.84 0 0 1-1.28-.37c-.89-.75-1.87-2.38-2.58-2.16s-.69 1.77-.69 1.77a.89.89 0 0 1-.16.51 1 1 0 0 1-.53.23H9.43a6.58 6.58 0 0 1-4.78-2.21C2.21 6.23.05 1.18.05 1.18S-.07.85.06.69a1 1 0 0 1 .57-.2h2.75a1.26 1.26 0 0 1 .45.17 1 1 0 0 1 .24.34 18.19 18.19 0 0 0 1 2.14c1.15 2 1.69 2.43 2.08 2.21.57-.31.4-2.81.4-2.81a2.76 2.76 0 0 0-.29-1.31 1.35 1.35 0 0 0-.83-.44c-.15 0 .1-.38.44-.54A6.08 6.08 0 0 1 9.27 0a4.72 4.72 0 0 1 1.35.14c1 .23.63 1.11.63 3.23 0 .68-.12 1.64.37 2 .21.14.73 0 2-2.17A17.09 17.09 0 0 0 14.71.9.77.77 0 0 1 15 .59a.66.66 0 0 1 .37-.08h2.9s.87-.11 1 .28-.33 1.38-1.51 3c-1.95 2.59-2.16 2.35-.55 3.85a9 9 0 0 1 1.92 2.21c.61 1.02-.73 1.15-.73 1.15z"></path></svg></i></a></li>
@@ -333,7 +304,7 @@
                 <a class="social__phone-second" href="tel:895546">8-665623-464-52</a>
             </div>
 
-            <div class="footer__block-links block-links">
+            <div class="block-links">
                 <p class="block-links__header">Покупки онлайн</p>
                 <a class="block-links__link" href="#">Доставка по всей России</a>
                 <a class="block-links__link" href="#">Оплата</a>
@@ -342,7 +313,7 @@
                 <a class="block-links__link" href="#">Отслеживание заказа</a>
             </div>
 
-            <div class="footer__block-links block-links">
+            <div class="block-links">
                 <p class="block-links__header">Покупателям</p>
                 <a class="block-links__link block-links__link--yellow" href="#">Правила Сумасшедших дней</a>
                 <a class="block-links__link" href="#">Оплата</a>
@@ -354,7 +325,7 @@
                 <a class="block-links__link" href="#">Отслеживание заказа</a>
             </div>
 
-            <div class="footer__block-links block-links">
+            <div class="block-links">
                 <p class="block-links__header">Компания</p>
                 <a class="block-links__link" href="#">Правила Сумасшедших дней</a>
                 <a class="block-links__link" href="#">Оплата</a>
@@ -366,9 +337,9 @@
 
             <div class="payments">
                 <p class="payments__header">Наши приложения</p>
-                <div class="payments__store app-store">
-                    <a href="#"><img class="app-store__img" src="img/app-google.svg" alt=""></a>
-                    <a href="#"><img class="app-store__img" src="img/app-apple.svg" alt=""></a>
+                <div class="payments__store app-stores">
+                    <a href="#"><img class="app-stores__img" src="img/app-google.svg" alt=""></a>
+                    <a href="#"><img class="app-stores__img" src="img/app-apple.svg" alt=""></a>
                 </div>
                 <p class="payments__header">Способы оплаты</p>
                 <div class="payments__payment-methods payment-methods">
@@ -381,7 +352,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer__about">
+        <div class="footer__copyright">
             <h1>ОАО "СТОКМАНН", 2024</h1>
             <a href="#">Политика конфиденциальности</a>
         </div>

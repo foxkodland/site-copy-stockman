@@ -1,0 +1,17 @@
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--color-gray);
+
+    img {
+        width: 20px;
+    }
+
+    span {
+        color: black;
+    }
+} 
